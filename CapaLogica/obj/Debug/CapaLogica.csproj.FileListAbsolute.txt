@@ -1,0 +1,9 @@
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\CapaLogica.dll
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\CapaLogica.pdb
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\CapaDatos.dll
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\CapaDatos.pdb
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\obj\Debug\CapaLogica.csprojResolveAssemblyReference.cache
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\obj\Debug\CapaLogica.dll
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\obj\Debug\CapaLogica.pdb
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\MySql.Data.dll
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaLogica\bin\Debug\MySql.Data.xml

@@ -1,0 +1,7 @@
+c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\CapaDatos.dll
+c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\CapaDatos.pdb
+c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.dll
+c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.pdb
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.dll
+C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.xml
