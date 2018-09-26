@@ -10,7 +10,7 @@ namespace CapaDatos
     class Conexion
     {
        
-    private MySqlConnection conexion = new MySqlConnection("server = localhost; database = biblioteca; User = root; Password = niutu1996;");
+    private MySqlConnection conexion = new MySqlConnection("server = localhost; database = bibliotecatesvg; User = root; Password = niutu1996;");
 
         public MySqlConnection AbrirConexion()
         {

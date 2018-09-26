@@ -15,7 +15,7 @@ namespace CapaDatos
 
         public MySqlDataReader Consulta_Inicio_Sesion(string usuario, string contraseña)
         {
-            string mysql = "select Nombre_usuario, Contraseña from tbadministrador where Nombre_usuario='" + usuario + "' and Contraseña='" + contraseña + "'";
+            string mysql = "select nombre_usuario, contraseña from tbadministrador where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = mysql;
@@ -26,7 +26,7 @@ namespace CapaDatos
         public DataTable Consulta_Carrera()
         {
             DataTable leer = new DataTable();
-            string mysql = "select * from tbcarrera";
+            string mysql = "select * from tbcarreras";
             MySqlCommand comando = new MySqlCommand(mysql, conexion.AbrirConexion());
             MySqlDataAdapter msda = new MySqlDataAdapter(comando);
             msda.Fill(leer);
@@ -48,7 +48,7 @@ namespace CapaDatos
         {
             //  DataTable leer = new DataTable();
             DataSet leer = new DataSet();
-            string mysql = "SELECT id_usuario, nombre, app, apm, nombre_carrera , tipo from tbusuario,tbcarrera,tbtipo_usuario WHERE tbcarrera.id_carrera=tbusuario.id_carrera and tbtipo_usuario.id_tipo_usuario = tbusuario.id_tipo_usuario and tbusuario.id_usuario = '" + numero_control + "'";
+            string mysql = "SELECT id_usuario, matricula, nombre, app, apm, grupo, nombre_carrera , tipo from tbusuarios, tbcarreras, tbtipo_usuario WHERE tbcarreras.id_carrera = tbusuarios.id_carrera and tbtipo_usuario.id_tipo = tbusuarios.id_tipo and tbusuarios.matricula = '" + numero_control + "'";
             MySqlCommand comando = new MySqlCommand(mysql, conexion.AbrirConexion());
             MySqlDataAdapter msda = new MySqlDataAdapter(comando);
             msda.Fill(leer);

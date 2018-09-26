@@ -68,9 +68,9 @@
             this.txtcontraseña.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtcontraseña.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.txtcontraseña.Location = new System.Drawing.Point(175, 272);
-            this.txtcontraseña.Multiline = true;
             this.txtcontraseña.Name = "txtcontraseña";
-            this.txtcontraseña.Size = new System.Drawing.Size(260, 22);
+            this.txtcontraseña.PasswordChar = '*';
+            this.txtcontraseña.Size = new System.Drawing.Size(260, 23);
             this.txtcontraseña.TabIndex = 20;
             // 
             // pictureBox4
@@ -115,9 +115,8 @@
             this.txtusuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtusuario.Font = new System.Drawing.Font("Century Gothic", 14F);
             this.txtusuario.Location = new System.Drawing.Point(175, 189);
-            this.txtusuario.Multiline = true;
             this.txtusuario.Name = "txtusuario";
-            this.txtusuario.Size = new System.Drawing.Size(260, 22);
+            this.txtusuario.Size = new System.Drawing.Size(260, 23);
             this.txtusuario.TabIndex = 16;
             // 
             // pictureBox3

@@ -25,20 +25,22 @@ namespace CapaPresentacion
 
             comboBox_tipo_usuario.DataSource = cl_objeto.ConsultaTipoUsurio();
             comboBox_tipo_usuario.DisplayMember = "tipo";
-            comboBox_tipo_usuario.ValueMember = "id_tipo_usuario";
+            comboBox_tipo_usuario.ValueMember = "id_tipo";
 
         }
 
-        private void btn_registrar_Click(object sender, EventArgs e)
+
+        private void btn_registrar_Click_1(object sender, EventArgs e)
         {
             CL_Altas cl_objeto = new CL_Altas();
             MySqlDataReader alta;
+            cl_objeto.Matricula = txtmatricula.Text;
             cl_objeto.Nombre = txtnombre.Text;
             cl_objeto.App = txtapp.Text;
             cl_objeto.Apm = txtapm.Text;
             cl_objeto.Grupo = txtgrupo.Text;
             cl_objeto.Id_Carrera = comboBox_carrera.SelectedValue.ToString();
-            cl_objeto.Id_Tipo_Usuario = comboBox_tipo_usuario.SelectedValue.ToString();
+            cl_objeto.Id_Tipo = comboBox_tipo_usuario.SelectedValue.ToString();
             alta = cl_objeto.AltasUsuario();
         }
     }

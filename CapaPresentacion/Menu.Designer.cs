@@ -67,6 +67,12 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iSBNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
@@ -172,7 +178,13 @@
             // 
             this.alumnosToolStripMenuItem1.BackColor = System.Drawing.SystemColors.Control;
             this.alumnosToolStripMenuItem1.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.nuevoLibroToolStripMenuItem});
+            this.nuevoLibroToolStripMenuItem,
+            this.idiomaToolStripMenuItem,
+            this.autorToolStripMenuItem,
+            this.editorialToolStripMenuItem,
+            this.ediciónToolStripMenuItem,
+            this.iSBNToolStripMenuItem,
+            this.categoriaToolStripMenuItem});
             this.alumnosToolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("alumnosToolStripMenuItem1.Image")));
             this.alumnosToolStripMenuItem1.Name = "alumnosToolStripMenuItem1";
             this.alumnosToolStripMenuItem1.Size = new System.Drawing.Size(228, 22);
@@ -183,7 +195,7 @@
             this.nuevoLibroToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.nuevoLibroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nuevoLibroToolStripMenuItem.Image")));
             this.nuevoLibroToolStripMenuItem.Name = "nuevoLibroToolStripMenuItem";
-            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.nuevoLibroToolStripMenuItem.Text = "Nuevo libro";
             // 
             // docentesToolStripMenuItem1
@@ -409,6 +421,42 @@
             this.pictureBox3.TabIndex = 4;
             this.pictureBox3.TabStop = false;
             // 
+            // idiomaToolStripMenuItem
+            // 
+            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
+            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.idiomaToolStripMenuItem.Text = "Idioma";
+            // 
+            // editorialToolStripMenuItem
+            // 
+            this.editorialToolStripMenuItem.Name = "editorialToolStripMenuItem";
+            this.editorialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.editorialToolStripMenuItem.Text = "Editorial";
+            // 
+            // ediciónToolStripMenuItem
+            // 
+            this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
+            this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.ediciónToolStripMenuItem.Text = "Edición";
+            // 
+            // autorToolStripMenuItem
+            // 
+            this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
+            this.autorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.autorToolStripMenuItem.Text = "Autor";
+            // 
+            // iSBNToolStripMenuItem
+            // 
+            this.iSBNToolStripMenuItem.Name = "iSBNToolStripMenuItem";
+            this.iSBNToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.iSBNToolStripMenuItem.Text = "ISBN";
+            // 
+            // categoriaToolStripMenuItem
+            // 
+            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.categoriaToolStripMenuItem.Text = "Categoría";
+            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -417,6 +465,7 @@
             this.Controls.Add(this.panel_general);
             this.Controls.Add(this.menuStrip1);
             this.Controls.Add(this.panel3);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
@@ -474,5 +523,11 @@
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ToolStripMenuItem registrasTipoDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoUsuarioToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem autorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem editorialToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem ediciónToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem iSBNToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem categoriaToolStripMenuItem;
     }
 }

@@ -5,3 +5,10 @@ c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDa
 c:\users\eric\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.pdb
 C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.dll
 C:\Users\ERIC\documents\visual studio 2017\Projects\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.xml
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\bin\Debug\CapaDatos.dll
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\bin\Debug\CapaDatos.pdb
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.dll
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\bin\Debug\MySql.Data.xml
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.csprojResolveAssemblyReference.cache
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.dll
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaDatos\obj\Debug\CapaDatos.pdb

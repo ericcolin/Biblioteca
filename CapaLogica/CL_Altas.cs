@@ -14,8 +14,15 @@ namespace CapaLogica
         private CD_Altas objetoDato = new CD_Altas();//Instancia a la capa datos de administrador
         //Declarar variables
         private String v_usuario, v_contraseña, v_nombre, v_app, v_apm;
-        private String v_grupo,v_id_carrera, v_id_tipo_usuario;
+        private String v_grupo,v_id_carrera, v_id_tipo, v_matricula;
         //Metodos get y set para el manejo de variables
+
+        public String Matricula
+        {
+            set { v_matricula = value; }
+            get { return v_matricula; }
+        }
+
         public String Nombre
         {
             set { v_nombre = value; }
@@ -54,10 +61,10 @@ namespace CapaLogica
             get { return v_id_carrera; }
         }
 
-        public String Id_Tipo_Usuario
+        public String Id_Tipo
         {
-            set { v_id_tipo_usuario = value; }
-            get { return v_id_tipo_usuario; }
+            set { v_id_tipo = value; }
+            get { return v_id_tipo; }
         }
 
 
@@ -80,7 +87,7 @@ namespace CapaLogica
         public MySqlDataReader AltasUsuario()
         {
             MySqlDataReader alta;
-            alta = objetoDato.Altas_Usuario(Id_Carrera, Id_Tipo_Usuario,Nombre, App, Apm, Grupo);
+            alta = objetoDato.Altas_Usuario(Matricula, Nombre, App, Apm, Grupo, Id_Carrera, Id_Tipo);
             return alta;
         }
     }
