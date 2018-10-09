@@ -38,3 +38,6 @@ C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPrese
 C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.csproj.GenerateResource.Cache
 C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.exe
 C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.pdb
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.Usuario.resources
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.Menu_Usuario.resources
+C:\Users\ERIC\Desktop\Sistema_Bibliotecario\CapaPresentacion\obj\Debug\CapaPresentacion.Prestamos.resources

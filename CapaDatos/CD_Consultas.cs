@@ -13,9 +13,60 @@ namespace CapaDatos
         private Conexion conexion = new Conexion();
         private MySqlDataReader leer;
 
+
         public MySqlDataReader Consulta_Inicio_Sesion(string usuario, string contraseña)
         {
-            string mysql = "select nombre_usuario, contraseña from tbadministrador where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
+            string mysql = "select nombre_usuario, contraseña,id_administrador from tbadministrador where nombre_usuario='" + usuario + "' and contraseña='" + contraseña + "'";
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = mysql;
+            leer = comando.ExecuteReader();
+            return leer;
+        }
+
+        public MySqlDataReader Consulta_NomUsuario_Administrador(string usuario)
+        {
+            string mysql = "select nombre_usuario from tbadministrador where nombre_usuario='" + usuario + "'";
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = mysql;
+            leer = comando.ExecuteReader();
+            return leer;
+        }
+
+        public MySqlDataReader Consulta_Buscar_Id_Usuario(string matricula)
+        {
+            string mysql = "select id_usuario from tbusuarios WHERE matricula = '"+matricula+"'";
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = mysql;
+            leer = comando.ExecuteReader();
+            return leer;
+        }
+
+        public MySqlDataReader Consulta_Buscar_Id_Ejemplar(string id_actual)
+        {
+            string mysql = "select id_ejemplar from tbejemplar where id_actual= '" + id_actual + "'";
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = mysql;
+            leer = comando.ExecuteReader();
+            return leer;
+        }
+
+        public MySqlDataReader Consulta_Contar_Libros(string id_ejemplar)
+        {
+            string mysql = "SELECT tblibros.cantidad,tblibros.id_libro from tbejemplar,tblibros WHERE  tbejemplar.Id_ejemplar= '"+id_ejemplar+"'  and tblibros.id_libro = tbejemplar.id_libro and tblibros.cantidad > '1'";
+            MySqlCommand comando = new MySqlCommand();
+            comando.Connection = conexion.AbrirConexion();
+            comando.CommandText = mysql;
+            leer = comando.ExecuteReader();
+            return leer;
+        }
+
+        public MySqlDataReader Consulta_Estado_Prestamo(string id_usuario, string estado)
+        {
+            string mysql = "select * from tbprestamo WHERE id_usuario='"+id_usuario+"' and estado = '"+estado+"';";
             MySqlCommand comando = new MySqlCommand();
             comando.Connection = conexion.AbrirConexion();
             comando.CommandText = mysql;

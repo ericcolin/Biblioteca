@@ -70,7 +70,7 @@ namespace CapaLogica
         public MySqlDataReader ActualizarUsuario()
         {
             MySqlDataReader alta;
-            alta = objetoDato.Actualizar_Usuario(Matricula, Nombre, App, Apm, Grupo, Id_Carrera, Id_Tipo_Usuario, Id_Usuario);
+            alta = objetoDato.Actualizar_Usuario(Id_Usuario, Matricula, Nombre, App, Apm, Grupo, Id_Carrera, Id_Tipo_Usuario);
             return alta;
         }
     }

@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Menu));
-            this.panel_general = new System.Windows.Forms.Panel();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.registrarUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.administradoresToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
@@ -40,6 +39,12 @@
             this.docentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.alumnosToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.nuevoLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.autorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.editorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.iSBNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.docentesToolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
             this.btnnueva_carrera = new System.Windows.Forms.ToolStripMenuItem();
             this.registrasTipoDeUsuariosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -57,39 +62,11 @@
             this.búsquedaDeLibrosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.búscarLibroToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.prestamosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prestamoAAlumnosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.prestamoADocentesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnprestamo = new System.Windows.Forms.ToolStripMenuItem();
             this.devolucionesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportesToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.idiomaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.editorialToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.ediciónToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.autorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.iSBNToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.categoriaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             this.SuspendLayout();
-            // 
-            // panel_general
-            // 
-            this.panel_general.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("panel_general.BackgroundImage")));
-            this.panel_general.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel_general.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel_general.Location = new System.Drawing.Point(0, 52);
-            this.panel_general.Name = "panel_general";
-            this.panel_general.Size = new System.Drawing.Size(697, 374);
-            this.panel_general.TabIndex = 18;
             // 
             // menuStrip1
             // 
@@ -103,9 +80,9 @@
             this.prestamosToolStripMenuItem,
             this.devolucionesToolStripMenuItem,
             this.reportesToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 27);
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(697, 25);
+            this.menuStrip1.Size = new System.Drawing.Size(828, 25);
             this.menuStrip1.TabIndex = 17;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -145,6 +122,7 @@
             // 
             this.btnnuevo_usuario.BackColor = System.Drawing.SystemColors.Control;
             this.btnnuevo_usuario.Name = "btnnuevo_usuario";
+            this.btnnuevo_usuario.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.U)));
             this.btnnuevo_usuario.Size = new System.Drawing.Size(341, 22);
             this.btnnuevo_usuario.Text = "Nuevo usuario";
             this.btnnuevo_usuario.Click += new System.EventHandler(this.btnnuevo_usuario_Click);
@@ -195,8 +173,44 @@
             this.nuevoLibroToolStripMenuItem.BackColor = System.Drawing.SystemColors.Control;
             this.nuevoLibroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nuevoLibroToolStripMenuItem.Image")));
             this.nuevoLibroToolStripMenuItem.Name = "nuevoLibroToolStripMenuItem";
-            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.nuevoLibroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.nuevoLibroToolStripMenuItem.Text = "Nuevo libro";
+            // 
+            // idiomaToolStripMenuItem
+            // 
+            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
+            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.idiomaToolStripMenuItem.Text = "Idioma";
+            // 
+            // autorToolStripMenuItem
+            // 
+            this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
+            this.autorToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.autorToolStripMenuItem.Text = "Autor";
+            // 
+            // editorialToolStripMenuItem
+            // 
+            this.editorialToolStripMenuItem.Name = "editorialToolStripMenuItem";
+            this.editorialToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.editorialToolStripMenuItem.Text = "Editorial";
+            // 
+            // ediciónToolStripMenuItem
+            // 
+            this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
+            this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.ediciónToolStripMenuItem.Text = "Edición";
+            // 
+            // iSBNToolStripMenuItem
+            // 
+            this.iSBNToolStripMenuItem.Name = "iSBNToolStripMenuItem";
+            this.iSBNToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.iSBNToolStripMenuItem.Text = "ISBN";
+            // 
+            // categoriaToolStripMenuItem
+            // 
+            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
+            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
+            this.categoriaToolStripMenuItem.Text = "Categoría";
             // 
             // docentesToolStripMenuItem1
             // 
@@ -321,29 +335,24 @@
             // 
             this.búscarLibroToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("búscarLibroToolStripMenuItem.Image")));
             this.búscarLibroToolStripMenuItem.Name = "búscarLibroToolStripMenuItem";
-            this.búscarLibroToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.búscarLibroToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.búscarLibroToolStripMenuItem.Text = "Buscar libro";
             // 
             // prestamosToolStripMenuItem
             // 
             this.prestamosToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.prestamoAAlumnosToolStripMenuItem,
-            this.prestamoADocentesToolStripMenuItem});
+            this.btnprestamo});
             this.prestamosToolStripMenuItem.Name = "prestamosToolStripMenuItem";
-            this.prestamosToolStripMenuItem.Size = new System.Drawing.Size(135, 21);
-            this.prestamosToolStripMenuItem.Text = "Prestamos externos";
+            this.prestamosToolStripMenuItem.Size = new System.Drawing.Size(85, 21);
+            this.prestamosToolStripMenuItem.Text = "Prestamos ";
             // 
-            // prestamoAAlumnosToolStripMenuItem
+            // btnprestamo
             // 
-            this.prestamoAAlumnosToolStripMenuItem.Name = "prestamoAAlumnosToolStripMenuItem";
-            this.prestamoAAlumnosToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.prestamoAAlumnosToolStripMenuItem.Text = "Prestamo  alumnos";
-            // 
-            // prestamoADocentesToolStripMenuItem
-            // 
-            this.prestamoADocentesToolStripMenuItem.Name = "prestamoADocentesToolStripMenuItem";
-            this.prestamoADocentesToolStripMenuItem.Size = new System.Drawing.Size(188, 22);
-            this.prestamoADocentesToolStripMenuItem.Text = "Prestamo  docente";
+            this.btnprestamo.Name = "btnprestamo";
+            this.btnprestamo.ShortcutKeys = ((System.Windows.Forms.Keys)((System.Windows.Forms.Keys.Control | System.Windows.Forms.Keys.P)));
+            this.btnprestamo.Size = new System.Drawing.Size(225, 22);
+            this.btnprestamo.Text = "Realizar Prestamo";
+            this.btnprestamo.Click += new System.EventHandler(this.btnprestamo_Click);
             // 
             // devolucionesToolStripMenuItem
             // 
@@ -357,135 +366,28 @@
             this.reportesToolStripMenuItem.Size = new System.Drawing.Size(73, 21);
             this.reportesToolStripMenuItem.Text = "Reportes";
             // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.panel3.Controls.Add(this.label1);
-            this.panel3.Controls.Add(this.panel4);
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(697, 27);
-            this.panel3.TabIndex = 16;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Black", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(2, 3);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(186, 22);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Sistema bibliotecario";
-            // 
-            // panel4
-            // 
-            this.panel4.Controls.Add(this.pictureBox2);
-            this.panel4.Controls.Add(this.pictureBox4);
-            this.panel4.Controls.Add(this.pictureBox3);
-            this.panel4.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel4.Location = new System.Drawing.Point(600, 0);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(97, 27);
-            this.panel4.TabIndex = 6;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(76, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox2.TabIndex = 3;
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox4.Image")));
-            this.pictureBox4.Location = new System.Drawing.Point(11, -1);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(31, 27);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 5;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(48, 6);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(15, 15);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.pictureBox3.TabIndex = 4;
-            this.pictureBox3.TabStop = false;
-            // 
-            // idiomaToolStripMenuItem
-            // 
-            this.idiomaToolStripMenuItem.Name = "idiomaToolStripMenuItem";
-            this.idiomaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.idiomaToolStripMenuItem.Text = "Idioma";
-            // 
-            // editorialToolStripMenuItem
-            // 
-            this.editorialToolStripMenuItem.Name = "editorialToolStripMenuItem";
-            this.editorialToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.editorialToolStripMenuItem.Text = "Editorial";
-            // 
-            // ediciónToolStripMenuItem
-            // 
-            this.ediciónToolStripMenuItem.Name = "ediciónToolStripMenuItem";
-            this.ediciónToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.ediciónToolStripMenuItem.Text = "Edición";
-            // 
-            // autorToolStripMenuItem
-            // 
-            this.autorToolStripMenuItem.Name = "autorToolStripMenuItem";
-            this.autorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.autorToolStripMenuItem.Text = "Autor";
-            // 
-            // iSBNToolStripMenuItem
-            // 
-            this.iSBNToolStripMenuItem.Name = "iSBNToolStripMenuItem";
-            this.iSBNToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.iSBNToolStripMenuItem.Text = "ISBN";
-            // 
-            // categoriaToolStripMenuItem
-            // 
-            this.categoriaToolStripMenuItem.Name = "categoriaToolStripMenuItem";
-            this.categoriaToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.categoriaToolStripMenuItem.Text = "Categoría";
-            // 
             // Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(697, 426);
-            this.Controls.Add(this.panel_general);
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(828, 402);
             this.Controls.Add(this.menuStrip1);
-            this.Controls.Add(this.panel3);
-            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.IsMdiContainer = true;
             this.Name = "Menu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Menu";
+            this.Text = "Sistema bibliotecario";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.panel4.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Panel panel_general;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem registrarUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem administradoresToolStripMenuItem1;
@@ -511,16 +413,9 @@
         private System.Windows.Forms.ToolStripMenuItem búsquedaDeLibrosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem búscarLibroToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem prestamosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem prestamoAAlumnosToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem prestamoADocentesToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem btnprestamo;
         private System.Windows.Forms.ToolStripMenuItem devolucionesToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem reportesToolStripMenuItem;
-        private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.ToolStripMenuItem registrasTipoDeUsuariosToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem nuevoUsuarioToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem idiomaToolStripMenuItem;

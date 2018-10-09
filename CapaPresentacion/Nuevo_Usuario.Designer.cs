@@ -51,7 +51,7 @@
             this.txtmatricula.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(211)))), ((int)(((byte)(222)))));
             this.txtmatricula.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtmatricula.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtmatricula.Location = new System.Drawing.Point(269, 59);
+            this.txtmatricula.Location = new System.Drawing.Point(192, 59);
             this.txtmatricula.Multiline = true;
             this.txtmatricula.Name = "txtmatricula";
             this.txtmatricula.Size = new System.Drawing.Size(260, 22);
@@ -63,7 +63,7 @@
             this.lblmatricula.AutoSize = true;
             this.lblmatricula.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.lblmatricula.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.lblmatricula.Location = new System.Drawing.Point(178, 59);
+            this.lblmatricula.Location = new System.Drawing.Point(101, 59);
             this.lblmatricula.Name = "lblmatricula";
             this.lblmatricula.Size = new System.Drawing.Size(85, 21);
             this.lblmatricula.TabIndex = 62;
@@ -73,7 +73,7 @@
             // 
             this.comboBox_tipo_usuario.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_tipo_usuario.FormattingEnabled = true;
-            this.comboBox_tipo_usuario.Location = new System.Drawing.Point(269, 226);
+            this.comboBox_tipo_usuario.Location = new System.Drawing.Point(192, 226);
             this.comboBox_tipo_usuario.Name = "comboBox_tipo_usuario";
             this.comboBox_tipo_usuario.Size = new System.Drawing.Size(260, 21);
             this.comboBox_tipo_usuario.TabIndex = 61;
@@ -82,7 +82,7 @@
             // 
             this.comboBox_carrera.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.comboBox_carrera.FormattingEnabled = true;
-            this.comboBox_carrera.Location = new System.Drawing.Point(269, 199);
+            this.comboBox_carrera.Location = new System.Drawing.Point(192, 199);
             this.comboBox_carrera.Name = "comboBox_carrera";
             this.comboBox_carrera.Size = new System.Drawing.Size(260, 21);
             this.comboBox_carrera.TabIndex = 60;
@@ -91,7 +91,7 @@
             // 
             this.btn_registrar.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.btn_registrar.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.btn_registrar.Location = new System.Drawing.Point(308, 278);
+            this.btn_registrar.Location = new System.Drawing.Point(231, 278);
             this.btn_registrar.Name = "btn_registrar";
             this.btn_registrar.Size = new System.Drawing.Size(165, 42);
             this.btn_registrar.TabIndex = 59;
@@ -105,7 +105,7 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label6.Location = new System.Drawing.Point(137, 226);
+            this.label6.Location = new System.Drawing.Point(60, 226);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(126, 21);
             this.label6.TabIndex = 58;
@@ -117,7 +117,7 @@
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label5.Location = new System.Drawing.Point(193, 199);
+            this.label5.Location = new System.Drawing.Point(116, 199);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(70, 21);
             this.label5.TabIndex = 57;
@@ -129,7 +129,7 @@
             this.txtgrupo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(211)))), ((int)(((byte)(222)))));
             this.txtgrupo.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtgrupo.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtgrupo.Location = new System.Drawing.Point(269, 171);
+            this.txtgrupo.Location = new System.Drawing.Point(192, 171);
             this.txtgrupo.Multiline = true;
             this.txtgrupo.Name = "txtgrupo";
             this.txtgrupo.Size = new System.Drawing.Size(260, 22);
@@ -141,7 +141,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label4.Location = new System.Drawing.Point(203, 172);
+            this.label4.Location = new System.Drawing.Point(126, 172);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(60, 21);
             this.label4.TabIndex = 55;
@@ -153,7 +153,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label3.Location = new System.Drawing.Point(117, 144);
+            this.label3.Location = new System.Drawing.Point(40, 144);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(146, 21);
             this.label3.TabIndex = 54;
@@ -165,7 +165,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label2.Location = new System.Drawing.Point(121, 115);
+            this.label2.Location = new System.Drawing.Point(44, 115);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(142, 21);
             this.label2.TabIndex = 53;
@@ -177,7 +177,7 @@
             this.txtapm.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(211)))), ((int)(((byte)(222)))));
             this.txtapm.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtapm.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtapm.Location = new System.Drawing.Point(269, 143);
+            this.txtapm.Location = new System.Drawing.Point(192, 143);
             this.txtapm.Multiline = true;
             this.txtapm.Name = "txtapm";
             this.txtapm.Size = new System.Drawing.Size(260, 22);
@@ -189,7 +189,7 @@
             this.txtapp.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(211)))), ((int)(((byte)(222)))));
             this.txtapp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtapp.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtapp.Location = new System.Drawing.Point(269, 115);
+            this.txtapp.Location = new System.Drawing.Point(192, 115);
             this.txtapp.Multiline = true;
             this.txtapp.Name = "txtapp";
             this.txtapp.Size = new System.Drawing.Size(260, 22);
@@ -201,7 +201,7 @@
             this.txtnombre.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(207)))), ((int)(((byte)(211)))), ((int)(((byte)(222)))));
             this.txtnombre.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtnombre.Font = new System.Drawing.Font("Century Gothic", 14F);
-            this.txtnombre.Location = new System.Drawing.Point(269, 87);
+            this.txtnombre.Location = new System.Drawing.Point(192, 87);
             this.txtnombre.Multiline = true;
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(260, 22);
@@ -213,7 +213,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(14)))), ((int)(((byte)(26)))), ((int)(((byte)(40)))));
-            this.label1.Location = new System.Drawing.Point(190, 87);
+            this.label1.Location = new System.Drawing.Point(113, 87);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(73, 21);
             this.label1.TabIndex = 49;
@@ -223,7 +223,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(693, 460);
+            this.ClientSize = new System.Drawing.Size(579, 370);
             this.Controls.Add(this.txtmatricula);
             this.Controls.Add(this.lblmatricula);
             this.Controls.Add(this.comboBox_tipo_usuario);

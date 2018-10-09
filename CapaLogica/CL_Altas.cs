@@ -14,8 +14,72 @@ namespace CapaLogica
         private CD_Altas objetoDato = new CD_Altas();//Instancia a la capa datos de administrador
         //Declarar variables
         private String v_usuario, v_contraseña, v_nombre, v_app, v_apm;
-        private String v_grupo,v_id_carrera, v_id_tipo, v_matricula;
+        private String v_grupo, v_id_carrera, v_id_tipo, v_matricula;
+        private String v_id_administrador, v_fecha_hora_entrada, v_fecha_hora_salida;
+        private String v_id_usuario, v_id_ejemplar, v_fecha_prestamo, v_fecha_entrega, v_fecha_devolucion, v_estado;
         //Metodos get y set para el manejo de variables
+        //Alta Prestamos
+
+        public String Id_Usuario
+        {
+            set { v_id_usuario = value; }
+            get { return v_id_usuario; }
+        }
+
+        public String Id_Ejemplar
+        {
+            set { v_id_ejemplar = value; }
+            get { return v_id_ejemplar; }
+        }
+
+        public String Fecha_Prestamo
+        {
+            set { v_fecha_prestamo = value; }
+            get { return v_fecha_prestamo; }
+        }
+
+        public String Fecha_Entrega
+        {
+            set { v_fecha_entrega = value; }
+            get { return v_fecha_entrega; }
+        }
+
+        public String Fecha_Devolucion
+        {
+            set { v_fecha_devolucion = value; }
+            get { return v_fecha_devolucion; }
+        }
+
+        public String Estado
+        {
+            set { v_estado = value; }
+            get { return v_estado; }
+        }
+
+        public MySqlDataReader AltasPrestamo()
+        {
+            MySqlDataReader alta;
+            alta = objetoDato.Altas_Prestamo(Id_Administrador, Id_Usuario, Id_Ejemplar, Fecha_Prestamo, Fecha_Entrega, Fecha_Devolucion, Estado);
+            return alta;
+        }
+        ///////////////////////
+        public String Id_Administrador
+        {
+            set { v_id_administrador = value; }
+            get { return v_id_administrador; }
+        }
+
+        public String Fecha_Hora_Entrada
+        {
+            set { v_fecha_hora_entrada = value; }
+            get { return v_fecha_hora_entrada; }
+        }
+
+        public String Fecha_Hora_Salida
+        {
+            set { v_fecha_hora_salida = value; }
+            get { return v_fecha_hora_salida; }
+        }
 
         public String Matricula
         {
@@ -71,6 +135,13 @@ namespace CapaLogica
         //Constructor
         public CL_Altas() { }
         //Funciones o metodos
+        public MySqlDataReader AltasBitacora()
+        {
+            MySqlDataReader alta;
+            alta = objetoDato.Altas_Bitacora(Id_Administrador, Fecha_Hora_Entrada, Fecha_Hora_Salida);
+            return alta;
+        }
+
         public MySqlDataReader AltasAdministrador()
         {
             MySqlDataReader alta;

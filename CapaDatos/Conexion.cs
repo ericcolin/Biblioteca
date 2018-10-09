@@ -14,9 +14,10 @@ namespace CapaDatos
 
         public MySqlConnection AbrirConexion()
         {
-                if (conexion.State == System.Data.ConnectionState.Closed)
-                    conexion.Open();
-                return conexion;
+            if (conexion.State == System.Data.ConnectionState.Closed) 
+            conexion.Open();
+            return conexion;
+          
         }
         public MySqlConnection CerrarConexion()
         {
